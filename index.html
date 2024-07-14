@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="header">
+      <input
+        class="search-field"
+        placeholder="Enter your query..."
+        id="searchQuery"
+      />
+      <button class="search-btn" id="searchButton">Search</button>
+      <select id="sortSelect">
+        <option value="author">Sort by Author</option>
+        <option value="title">Sort by Title</option>
+        <option value="genre">Sort by Genre</option>
+      </select>
+    </div>
+
+    <div class="catalog"></div>
+    <div class="no-results" id="noResultsMessage" style="display: none">
+      No results found
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
